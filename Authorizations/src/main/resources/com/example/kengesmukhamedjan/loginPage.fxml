@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kengesmukhamedjan.LoginController">
+   <children>
+      <TextField fx:id="password" layoutX="280.0" layoutY="222.0" prefHeight="36.0" prefWidth="276.0" promptText="Password" />
+      <Pane prefHeight="400.0" prefWidth="254.0" style="-fx-background-color: #9932cc;">
+         <children>
+            <ImageView fx:id="progress" fitHeight="104.0" fitWidth="92.0" layoutX="71.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@newspaper_icon-icons.com_49238.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="51.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Every day new news">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="46.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mukhamedjan">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TextField fx:id="username" layoutX="280.0" layoutY="164.0" prefHeight="36.0" prefWidth="276.0" promptText="Username" />
+      <Text layoutX="286.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="131.8505859375">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Text>
+      <Button fx:id="login" layoutX="456.0" layoutY="282.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #9932cc;" text="Login">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="remember" layoutX="286.0" layoutY="282.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="152.0" text="Remember me" />
+      <Button fx:id="signup" layoutX="324.0" layoutY="336.0" mnemonicParsing="false" onAction="#signUpAction" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: transparent;" text="Create new account" textFill="#0c1dd7" underline="true" />
+      <Button fx:id="forgetPswd" layoutX="324.0" layoutY="361.0" mnemonicParsing="false" onAction="#forgetPassword" prefHeight="20.0" prefWidth="188.0" style="-fx-background-color: transparent;" text="Forget password?" textFill="#0c1dd7" underline="true" />
+   </children>
+</Pane>

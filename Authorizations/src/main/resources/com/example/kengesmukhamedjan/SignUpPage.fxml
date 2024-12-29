@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kengesmukhamedjan.SignUpController">
+   <children>
+      <TextField fx:id="password" layoutX="292.0" layoutY="193.0" prefHeight="28.0" prefWidth="229.0" promptText="Password" />
+      <Pane prefHeight="400.0" prefWidth="254.0" style="-fx-background-color: #9932cc;">
+         <children>
+            <ImageView fx:id="progress" fitHeight="104.0" fitWidth="92.0" layoutX="71.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@newspaper_icon-icons.com_49238.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="51.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Every day new news">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="46.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mukhamedjan">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <TextField fx:id="username" layoutX="292.0" layoutY="152.0" prefHeight="28.0" prefWidth="229.0" promptText="Username" />
+      <Text layoutX="292.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up" wrappingWidth="159.050537109375">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Text>
+      <TextField fx:id="email" layoutX="294.0" layoutY="236.0" prefHeight="28.0" prefWidth="229.0" promptText="Email" />
+      <Button fx:id="signup" layoutX="294.0" layoutY="286.0" mnemonicParsing="false" onAction="#signUp" prefHeight="37.0" prefWidth="229.0" style="-fx-background-color: #9932cc;" text="Sign Up ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="login" layoutX="360.0" layoutY="336.0" mnemonicParsing="false" onAction="#loginAction" style="-fx-background-color: trasparent;" text="I have account" textFill="#006fff" />
+   </children>
+</Pane>
